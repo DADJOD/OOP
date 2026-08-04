@@ -1,12 +1,22 @@
 package com.example.oop
 
-class Corporation {
-
-}
-
 fun main() {
-    var assistant = Assistant()
-    assistant.bringCoffee(3, "Latte")
-    assistant.bringCoffee(2, "Cappuccino")
-    assistant.bringCoffee(1, "Espresso")
+    print("Enter name: ")
+    val name = readln()
+    print("Enter brand: ")
+    val brand = readln()
+    print("Enter size: ")
+    val size = readln().toFloat()
+    print("Enter price: ")
+    val price = readln().toInt()
+
+    val productCard = ProductCard()
+    val secondProductCard = ProductCard()
+
+    productCard.name = name
+    productCard.brand = brand
+    productCard.size = size
+
+    productCard.printInfo()
+    secondProductCard.printInfo()
 }
