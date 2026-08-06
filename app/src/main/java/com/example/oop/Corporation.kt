@@ -13,9 +13,7 @@ fun main() {
     val productCard = ProductCard()
     val secondProductCard = ProductCard()
 
-    productCard.name = name
-    productCard.brand = brand
-    productCard.size = size
+    productCard.init(name = name, brand = brand, size = size, price = price)
 
     productCard.printInfo()
     secondProductCard.printInfo()

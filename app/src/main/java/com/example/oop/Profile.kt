@@ -4,15 +4,15 @@ fun main() {
     val john = Person()
     val jack = Person()
 
-//    println("Enter name for first person: ")
-//    john.name = readln()
-//    println("Enter age for first person: ")
-//    john.age = readln().toInt()
-//    println("Enter height for first person: ")
-//    john.height = readln().toInt()
-//    println("Enter weight for first person: ")
-//    john.weight = readln().toInt()
-//
+    print("Enter name for first person: ")
+    john.name = readln()
+    print("Enter age for first person: ")
+    john.age = readln().toInt()
+    print("Enter height for first person: ")
+    john.height = readln().toInt()
+    print("Enter weight for first person: ")
+    john.weight = readln().toInt()
+
 //    println("Enter name for second person: ")
 //    jack.name = readln()
 //    println("Enter age for second person: ")
@@ -21,8 +21,7 @@ fun main() {
 //    jack.height = readln().toInt()
 //    println("Enter weight for second person: ")
 //    jack.weight = readln().toInt()
-//
-//
+
 //    println(
 //        "First person name: ${john.name} and age: ${john.age} " +
 //                "and height: ${john.height} and weight: ${john.weight}"
@@ -32,9 +31,15 @@ fun main() {
 //                "and height: ${jack.height} and weight: ${jack.weight}"
 //    )
 
-    john.sayHello()
-    jack.sayHello()
-    john.run()
-    jack.run()
+    john.printInfo()
+    jack.printInfo()
+
+    john.sayHello(john.name)
+    jack.sayHello(jack.name)
+
+//    john.sayHello()
+//    jack.sayHello()
+//    john.run()
+//    jack.run()
 
 }
